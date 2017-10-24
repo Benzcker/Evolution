@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Evolution</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<link rel="shortcut icon" type="image/x-icon" href="dna-icon.png" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="body">
+			<center><u><h1 onclick="skipIntro()">Evolution Simulator</h1></u></center>
+			<table width="100%">
+				<tr>
+					<th>
+						<div align="left">
+							<input type="button" id="populate" value="populate selected" onclick="populate()" class="buttons">
+							<input type="button" id="deselectAll" value="deselect all" onclick="deselectAll()" class="buttons">
+							<input type="button" id="sendToWarButton" value="sendToWar" onclick="sendToWar()" class="buttons">
+							<input type="button" id="showBarbarianStats" value="show barbarian stats" onclick="showBarbarianStats()" class="buttons">
+						</div>
+					</th>
+					<th>
+						<div align="right">
+								<div id="year">
+									<b>Year:</b> 0
+								</div>
+							<input type="button" name="nextYear" value="next year" onclick="nextYearButton()" class="buttons"><br /><br />
+						</div>
+					</th>
+				</tr>
+			</table>
+			<div id="info">Information!</div>
+			<div id="output" align="center"></div>
+			<div name="spacerbottom" style="height:100px"></div>
+			<div id="description">
+				Let your nation grow and become the greatest and the most advanced society ever!<br / ><br />
+				Notice: To get a child a person has to be at least 12 years old! Every Person can get only one child a year! 
+				When the DNA of two people is similar in some points, their child will get worse statistics, depending on the strenght of the similarity. You will get a message if that happens. <br /><br />
+				Your fightskills are a combination of your strenght and your IQ. Your fightpower depends on your fightskills, your communication, your weapons and the amount of warriors you send to war. If you win a war the strenght of your fighters will increase, but if your lose most of your fighters will die and many of your folk too.
+			</div>
+			<div name="spacerfoot" style="height:300px"></div>
+		</div>
+	</body>
+	<script src="main.js" type="text/javascript"></script>
+</html>
